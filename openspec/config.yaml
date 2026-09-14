@@ -1,0 +1,40 @@
+schema: spec-driven
+
+# The context block is handed to whoever drafts an artifact. Replace the
+# bracketed lines with pointers to this repository's own files and decisions.
+# Everything not bracketed applies to any repository using this lifecycle.
+context: |
+  Read AGENTS.md first. It carries the operating rules: no em dashes in prose,
+  nothing outside this repository cited as evidence, Conventional Commits in
+  English, no attribution lines.
+
+  product/domain.md is the glossary. Every artifact is written in its terms and
+  uses no synonym it lists under Avoid. A change that needs a term the glossary
+  lacks, or means differently, edits the glossary as its own act and says so.
+
+  product/principles.md filters every decision. When a proposal conflicts with a
+  principle, the principle wins or the principle changes; never a quiet exception.
+
+  docs/guides/lifecycle.md is the development cycle: intent, spec, human review,
+  one task per session, human review, archive. A spec is approved by a person
+  before anything is implemented. No task is larger than one session.
+
+  docs/adr/ holds the decisions already taken.
+  [Name the ones an author must know before drafting. For example: the
+  architecture and the ADR that chose it, how environments are configured, how
+  the repository is laid out.]
+
+rules:
+  proposal:
+    - Link the issue that states the intent.
+    - Name what is out of scope. What moves outside those lines is a defect.
+  specs:
+    - Requirements are WHEN/THEN scenarios that translate into tests without interpretation.
+    - Use only glossary terms for the things of the product.
+    # - [A constraint every scenario must respect, if this repository has one.]
+  design:
+    - Where a design choice rejects a real alternative that will outlive this change, record it in docs/adr/ rather than here, and link it.
+    - A decision the glossary or a principle already made is not an ADR; state it here and cite the glossary or the principle.
+    # - [An invariant every design must hold to, if this repository has one.]
+  tasks:
+    - Each task fits one session and names how it is verified.

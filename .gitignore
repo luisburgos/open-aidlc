@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Harness-local settings that are not shared
+.claude/settings.local.json
+
+# Add this repository's own build output, dependency directories and generated
+# files as the stack is chosen.
