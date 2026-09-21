@@ -12,7 +12,7 @@ Format is [MADR 4.0.0](https://adr.github.io/madr/), minimal variant.
 | [0003](0003-write-documentation-in-markdown-and-mermaid.md) | Write documentation in Markdown and Mermaid | `candidate-standard` | Accepted |
 | [0004](0004-structure-the-repository-by-concern.md) | Structure the repository by concern | `candidate-standard` | Accepted |
 
-The five above are the method itself. Decisions about what you are building start at `0005`.
+The records above are the method itself. Decisions about what you are building take the next number after them.
 
 ADR-0004 is the one a project may reasonably not want, and its *Confirmation* says so. Declining it means writing the record that supersedes it, not making an exception to it.
 

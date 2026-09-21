@@ -32,7 +32,7 @@ flowchart TB
 
 ## Rules
 
-Four constraints hold the cycles together. Breaking one does not slow the lifecycle down, it stops it being the lifecycle.
+No constraint here is optional. Breaking one does not slow the lifecycle down, it stops it being the lifecycle.
 
 - **Change the glossary deliberately, never as a side effect.** `product/domain.md` is read before a spec is written. A change that needs the glossary altered says so and alters it as its own act.
 - **Every change names the term it builds.** A change says which term of `product/domain.md` it makes real or extends, and why that term before any other still unbuilt. A change that can name none is not ready, whatever else it is.

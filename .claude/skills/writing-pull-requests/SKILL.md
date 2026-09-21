@@ -6,7 +6,7 @@ description: >
   in.
 ---
 
-The five sections come from [`.github/pull_request_template.md`](../../../.github/pull_request_template.md), and every comment in it is an instruction to delete that comment. This skill is the **register** the template cannot enforce.
+The sections come from [`.github/pull_request_template.md`](../../../.github/pull_request_template.md), and every comment in it is an instruction to delete that comment. This skill is the **register** the template cannot enforce.
 
 An agent-authored description fails the same way every time: it narrates the session that produced the change instead of stating what a reviewer must act on. The diff is one click away and says what changed. A description earns its place by carrying what the diff cannot — what was deliberately left alone, what went unverified, and where to push back.
 
