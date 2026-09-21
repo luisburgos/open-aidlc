@@ -32,11 +32,14 @@ flowchart TB
 
 ## Rules
 
-Three constraints hold the cycles together. Breaking one does not slow the lifecycle down, it stops it being the lifecycle.
+Four constraints hold the cycles together. Breaking one does not slow the lifecycle down, it stops it being the lifecycle.
 
 - **Change the glossary deliberately, never as a side effect.** `product/domain.md` is read before a spec is written. A change that needs the glossary altered says so and alters it as its own act.
+- **Every change names the term it builds.** A change says which term of `product/domain.md` it makes real or extends, and why that term before any other still unbuilt. A change that can name none is not ready, whatever else it is.
 - **Never skip a gate, least of all under time pressure.** Whatever is not reserved for a human gets decided by whoever is executing.
 - **One task per session, reviewed and committed before the next.** Review is the constraint once authoring stops being one. Batching tasks makes the review too big to do properly.
+
+The second rule exists because the first one is not enough on its own. Reading the glossary before writing a spec does not make a change build toward it, and a change can honour every word of the first rule while adding a screen the product never asked for. Naming the term is the part that can be checked from outside the change.
 
 ## Development
 
@@ -93,8 +96,8 @@ A step starts when its entry criteria hold and finishes when its exit criteria d
 | Step | Starts when | Finishes when |
 |---|---|---|
 | `intent` | someone can state what should become possible | the statement names a behaviour, not an implementation |
-| `spec` | an intent exists and `product/domain.md` has been read | behaviour, constraints, out-of-scope and tasks are all written, and no task is larger than one session |
-| `review` (1) | a draft spec exists | no decision is left for the agent to make alone, and every constraint that matters is written down |
+| `spec` | an intent exists and `product/domain.md` has been read | behaviour, constraints, out-of-scope and tasks are all written, no task is larger than one session, and no requirement describes a component rather than the product |
+| `review` (1) | a draft spec exists | no decision is left for the agent to make alone, every constraint that matters is written down, and the change names the term it builds and why that one first |
 | `task` | the spec is approved and the previous task is committed | the task's own verification passes |
 | `review` (2) | one task is implemented and verified | **(judgement)** the code is one a reviewer will accept living with, and it is committed |
 | `archive` | every task in the spec is committed | `openspec/specs/` describes the new behaviour and the change folder is gone |
@@ -106,6 +109,24 @@ The gate criteria are deliberately the hardest to satisfy. Gate 1 fails while an
 It is meant to get narrower. Where a repository has CI, a green pipeline becomes gate 2's entry criterion, and everything mechanical — tests, build, static analysis, formatting — leaves the reviewer's attention and is settled before they look. Guards added over time do the same, each one converting a question that needed judgement into one that does not.
 
 What is left for a person shrinks in proportion to how much the pipeline, the lifecycle and those guards have earned trust. It never reaches zero: an agent that writes both the implementation and its tests has verified its own work, so a green pipeline is a necessary condition and never a sufficient one.
+
+### What carries a specification, and what does not
+
+A specification says what a person can do with the product. What a component does is the contract of its own signature and its previews, and it carries no specification here.
+
+The line is not interface against system. A whole screen is a legitimate requirement: opening an item's detail by tapping its row is something a person can do. A picker that scrolls horizontally is not, and neither is a cell drawn at rising opacity. **The line is product against part.**
+
+Writing a component's states in prose creates a second source for something the code already states exactly, and the prose is the one that drifts. Where components take values and callbacks only, and every state has a preview, the previews already enumerate the states and cannot fall out of step without failing to compile.
+
+Three things about components genuinely need somewhere to live, and only the last is rare:
+
+| What | Where |
+|---|---|
+| Tokens, and the intent behind them | `product/` |
+| Which components exist | an index of names, no prose |
+| A visual decision that rejected a lasting alternative | `docs/adr/` |
+
+The last one is an ADR by the same test as any other: it rejected an alternative, and the decision outlives the component. Laying an editor out as an identity row and then cards is that. What a colour well offers is not a decision, it is what the component does.
 
 ### Where the code is the authority, and where it is not
 
