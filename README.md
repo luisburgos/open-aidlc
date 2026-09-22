@@ -18,7 +18,7 @@ Three cycles, nested. Each turns at its own rate.
 
 An agent drafts the specification and writes the code. A person approves the specification before anything is implemented, and approves the code before it is kept. Those two gates are the lifecycle; everything else is arrangement.
 
-Only development is specified. Delivery and learning are named so that archiving a change is not mistaken for shipping, and shipping is not mistaken for learning. Their steps stay undefined until there is a real release to describe, because writing the procedure before running it once is inventing it.
+Only development is specified. Delivery and learning are named so that archiving a change is not mistaken for shipping, and shipping is not mistaken for learning. The guide says why their steps stay undefined.
 
 The full procedure is [`docs/guides/lifecycle.md`](docs/guides/lifecycle.md).
 
@@ -39,20 +39,20 @@ ADR-0004 is the one you may not want. A repository that will only ever hold one 
 ## Folder structure
 
 ```
-product/       what this is, who it is for, what it is made of
-openspec/      what the system does today, and what is about to change
+product/
+openspec/
 docs/
-  adr/         decisions and what they rejected
-  guides/      repeatable procedures
-.claude/       skills local to this repository
+  adr/
+  guides/
+.claude/
 
-               not yet created:
-apps/          one directory per application
-packages/      code shared between applications
-tools/         scripts
+not yet created:
+apps/
+packages/
+tools/
 ```
 
-[ADR-0004](docs/adr/0004-structure-the-repository-by-concern.md) carries the full layout and the reasoning for arranging it this way.
+What each one holds, and why they are arranged this way, is [ADR-0004](docs/adr/0004-structure-the-repository-by-concern.md). A directory is created when it has content, which is why the last three are named there and absent here.
 
 ## Getting started
 
