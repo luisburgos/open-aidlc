@@ -18,7 +18,7 @@ Three cycles, nested. Each turns at its own rate.
 
 An agent drafts the specification and writes the code. A person approves the specification before anything is implemented, and approves the code before it is kept. Those two gates are the lifecycle; everything else is arrangement.
 
-Only development is specified. Delivery and learning are named so that archiving a change is not mistaken for shipping, and shipping is not mistaken for learning. Their steps stay undefined until there is a real release to describe, because writing the procedure before running it once is inventing it.
+Only development is specified. Delivery and learning are named so that archiving a change is not mistaken for shipping, and shipping is not mistaken for learning. The guide says why their steps stay undefined.
 
 The full procedure is [`docs/guides/lifecycle.md`](docs/guides/lifecycle.md).
 
@@ -32,27 +32,13 @@ The full procedure is [`docs/guides/lifecycle.md`](docs/guides/lifecycle.md).
 | [0003](docs/adr/0003-write-documentation-in-markdown-and-mermaid.md) | Write documentation in Markdown and Mermaid |
 | [0004](docs/adr/0004-structure-the-repository-by-concern.md) | Structure the repository by concern |
 
-All five are tagged `candidate-standard`, which means they are meant to travel but have not been proven by long use. Each says in its *Confirmation* section what would validate it and what would sink it. You are adopting something in trial, and the records say so rather than hiding it.
+Every one of them is tagged `candidate-standard`, which means they are meant to travel but have not been proven by long use. Each says in its *Confirmation* section what would validate it and what would sink it. You are adopting something in trial, and the records say so rather than hiding it.
 
 ADR-0004 is the one you may not want. A repository that will only ever hold one application pays for `apps/` and `packages/` without collecting on them. Declining it means writing the ADR that supersedes it with the layout you chose instead, which is the mechanism these records already have. Nothing else here depends on the answer.
 
 ## Folder structure
 
-```
-product/       what this is, who it is for, what it is made of
-openspec/      what the system does today, and what is about to change
-docs/
-  adr/         decisions and what they rejected
-  guides/      repeatable procedures
-.claude/       skills local to this repository
-
-               not yet created:
-apps/          one directory per application
-packages/      code shared between applications
-tools/         scripts
-```
-
-[ADR-0004](docs/adr/0004-structure-the-repository-by-concern.md) carries the full layout and the reasoning for arranging it this way.
+`product/`, `openspec/`, `docs/` and `.claude/` are here. `apps/`, `packages/` and `tools/` are not, because a directory is created when it has content. What each one holds, and why they are arranged this way, is [ADR-0004](docs/adr/0004-structure-the-repository-by-concern.md).
 
 ## Getting started
 
@@ -81,7 +67,7 @@ To see what the CLI eventually produces, [`openspec/changes/archive/_example-mar
 
 **3. Record your first decisions.**
 
-`docs/adr/` already holds five, covering the method itself. Yours start at `0005`. Copy [`_template.md`](docs/adr/_template.md) rather than reconstructing the structure from another record.
+`docs/adr/` already holds the records covering the method itself. Yours take the next number after them. Copy [`_template.md`](docs/adr/_template.md) rather than reconstructing the structure from another record.
 
 ## License
 

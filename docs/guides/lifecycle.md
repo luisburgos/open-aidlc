@@ -32,11 +32,14 @@ flowchart TB
 
 ## Rules
 
-Three constraints hold the cycles together. Breaking one does not slow the lifecycle down, it stops it being the lifecycle.
+No constraint here is optional. Breaking one does not slow the lifecycle down, it stops it being the lifecycle.
 
 - **Change the glossary deliberately, never as a side effect.** `product/domain.md` is read before a spec is written. A change that needs the glossary altered says so and alters it as its own act.
+- **Every change names the term it builds.** A change says which term of `product/domain.md` it makes real or extends, and why that term before any other still unbuilt. A change that can name none is not ready, whatever else it is.
 - **Never skip a gate, least of all under time pressure.** Whatever is not reserved for a human gets decided by whoever is executing.
 - **One task per session, reviewed and committed before the next.** Review is the constraint once authoring stops being one. Batching tasks makes the review too big to do properly.
+
+The second rule exists because the first one is not enough on its own. Reading the glossary before writing a spec does not make a change build toward it, and a change can honour every word of the first rule while adding a screen the product never asked for. Naming the term is the part that can be checked from outside the change.
 
 ## Development
 
@@ -94,7 +97,7 @@ A step starts when its entry criteria hold and finishes when its exit criteria d
 |---|---|---|
 | `intent` | someone can state what should become possible | the statement names a behaviour, not an implementation |
 | `spec` | an intent exists and `product/domain.md` has been read | behaviour, constraints, out-of-scope and tasks are all written, and no task is larger than one session |
-| `review` (1) | a draft spec exists | no decision is left for the agent to make alone, and every constraint that matters is written down |
+| `review` (1) | a draft spec exists | no decision is left for the agent to make alone, every constraint that matters is written down, and the change names the term it builds and why that one first |
 | `task` | the spec is approved and the previous task is committed | the task's own verification passes |
 | `review` (2) | one task is implemented and verified | **(judgement)** the code is one a reviewer will accept living with, and it is committed |
 | `archive` | every task in the spec is committed | `openspec/specs/` describes the new behaviour and the change folder is gone |

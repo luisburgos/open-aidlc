@@ -16,6 +16,8 @@ The vocabulary of the product is [`product/domain.md`](product/domain.md). It is
 
 Read it before drafting a specification. A change that needs a new term, or an existing one to mean something else, edits the glossary as its own act and says so.
 
+A change also names the term it builds: which entry it makes real or extends, and why that one before any other still unbuilt. A change that can name none is not ready. Reading the glossary is not the same as building toward it, and only the second is visible from outside the change.
+
 Root [`CONTEXT.md`](CONTEXT.md) only points there, for tooling that looks for a glossary at the root. Do not add terms to it.
 
 ## Specifications
