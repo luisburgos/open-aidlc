@@ -8,7 +8,7 @@ ADRs follow [`docs/adr/README.md`](docs/adr/README.md). **Read it before writing
 
 The README settles which sections a record uses and how long it runs. How it should read is the `writing-adrs` skill, which exists because structure alone does not prevent the usual failure: writing three times as much as the decision needs.
 
-The `writing-adrs` skill carries that procedure plus the specific mistakes made here. Use it rather than working from the README alone.
+The `writing-adrs` skill carries that procedure. It comes from the `contributing` plugin, which [`.claude/settings.json`](.claude/settings.json) declares; if it is not available, say so rather than writing the record without it. Use it rather than working from the README alone. A mistake caught in review here that it did not prevent is written down in this section.
 
 ## Domain model
 

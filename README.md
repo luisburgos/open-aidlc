@@ -56,7 +56,7 @@ To see what the CLI eventually produces, [`openspec/changes/archive/_example-mar
 
 **2. Install the `contributing` plugin.**
 
-`.claude/settings.json` declares it: it carries the `writing-pull-requests` skill that `AGENTS.md` sends agents to.
+`.claude/settings.json` declares it: it carries the `writing-pull-requests` and `writing-adrs` skills that `AGENTS.md` sends agents to.
 
 ```bash
 claude plugin marketplace add luisburgos/skills
