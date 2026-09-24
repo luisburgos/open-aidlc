@@ -54,7 +54,16 @@ This generates `openspec/`, the skills under `.claude/skills/openspec-*`, and th
 
 To see what the CLI eventually produces, [`openspec/changes/archive/_example-mark-an-item-done/`](openspec/changes/archive/_example-mark-an-item-done/) is a worked example of the four artifacts an archived change carries, written by hand for a toy product. Read it, then delete the directory.
 
-**2. Fill in what is yours.**
+**2. Install the `contributing` plugin.**
+
+`.claude/settings.json` declares it: it carries the `writing-pull-requests` skill that `AGENTS.md` sends agents to.
+
+```bash
+claude plugin marketplace add luisburgos/skills
+claude plugin install contributing@luisburgos
+```
+
+**3. Fill in what is yours.**
 
 | File | What to do |
 |---|---|
@@ -65,7 +74,7 @@ To see what the CLI eventually produces, [`openspec/changes/archive/_example-mar
 | `AGENTS.md` | Fill the sections marked as needing a pointer. |
 | `LICENSE` | Your name, or your own licence. |
 
-**3. Record your first decisions.**
+**4. Record your first decisions.**
 
 `docs/adr/` already holds the records covering the method itself. Yours take the next number after them. Copy [`_template.md`](docs/adr/_template.md) rather than reconstructing the structure from another record.
 
