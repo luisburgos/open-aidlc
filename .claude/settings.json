@@ -1,0 +1,13 @@
+{
+  "enabledPlugins": {
+    "contributing@luisburgos": true
+  },
+  "extraKnownMarketplaces": {
+    "luisburgos": {
+      "source": {
+        "source": "github",
+        "repo": "luisburgos/skills"
+      }
+    }
+  }
+}
