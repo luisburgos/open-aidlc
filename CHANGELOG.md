@@ -12,6 +12,7 @@ Every change to a `candidate-standard` record says its **migration impact**, one
 
 ### Added
 
+- `product/journey.md`: the stages a person goes through with the product, each linking the PRD flows that serve it today, and the one moment that matters. A brief names the stages its bet covers. ADR-0004 lists it under `product/`. **Migration impact: clarified** for ADR-0004.
 - `product/prds/_template.md` and a *Product requirements* section in `AGENTS.md`: where PRDs live, that a change edits its PRD first, and the `writing-prds` skill that drafts one. ADR-0002 points at the template. **Migration impact: none** for the record; a repository adopting ADR-0002 copies the template.
 
 ### Removed
