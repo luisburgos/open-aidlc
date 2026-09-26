@@ -8,7 +8,7 @@ Every change to a `candidate-standard` record says its **migration impact**, one
 - **Clarified:** the decision stands, stated more precisely; reread it.
 - **Reversed:** the decision changed; an adopter who followed it has something to undo, named in the entry.
 
-## Unreleased
+## [0.2.0] - 2026-09-26
 
 ### Added
 
