@@ -99,6 +99,15 @@ No attribution lines: no generated-with trailers, no co-author trailers naming t
 
 Pull requests use [`.github/pull_request_template.md`](.github/pull_request_template.md). Delete every comment as you fill it in, and delete any section that has nothing to say rather than padding it.
 
+A pull request is squash-merged: it lands on `main` as one commit titled with its Conventional Commit and its number, which is what a generated changelog reads, one line per pull request. Never merge with a merge commit, which puts every commit of the branch on `main`. How the entry of a release is generated is the `generating-changelogs` skill of the `contributing` plugin.
+
+A pull request is atomic: it does one thing, and a description that needs "and also" is two pull requests.
+
+- A change to a PRD, the glossary or another product document is its own pull request, merged before the code that builds it.
+- A refactor changes no behaviour; a fix or a feature goes in a separate pull request.
+- Removing what is no longer used comes before adding what replaces it.
+- Two pull requests that change the same lines are not open at once: the second waits for the first to merge.
+
 <!--
   Sections to add as this repository grows:
 
