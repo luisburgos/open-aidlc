@@ -8,7 +8,7 @@ Format is [MADR 4.0.0](https://adr.github.io/madr/), minimal variant.
 |---|---|---|---|
 | [0000](0000-use-madr-for-decision-records.md) | Use MADR for architecture decision records | `candidate-standard` | Accepted |
 | [0001](0001-adopt-an-agentic-development-lifecycle.md) | Adopt an agentic development lifecycle | `candidate-standard` | Accepted |
-| [0002](0002-use-specs-as-the-development-contract.md) | Use specs as the development contract | `candidate-standard` | Accepted |
+| [0002](0002-use-living-prds-as-the-product-contract.md) | Use living PRDs as the product contract | `candidate-standard` | Accepted |
 | [0003](0003-write-documentation-in-markdown-and-mermaid.md) | Write documentation in Markdown and Mermaid | `candidate-standard` | Accepted |
 | [0004](0004-structure-the-repository-by-concern.md) | Structure the repository by concern | `candidate-standard` | Accepted |
 

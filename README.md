@@ -28,7 +28,7 @@ The full procedure is [`docs/guides/lifecycle.md`](docs/guides/lifecycle.md).
 |---|---|
 | [0000](docs/adr/0000-use-madr-for-decision-records.md) | MADR 4.0.0 for decision records |
 | [0001](docs/adr/0001-adopt-an-agentic-development-lifecycle.md) | Adopt an agentic development lifecycle |
-| [0002](docs/adr/0002-use-specs-as-the-development-contract.md) | Use specs as the development contract |
+| [0002](docs/adr/0002-use-living-prds-as-the-product-contract.md) | Use living PRDs as the product contract |
 | [0003](docs/adr/0003-write-documentation-in-markdown-and-mermaid.md) | Write documentation in Markdown and Mermaid |
 | [0004](docs/adr/0004-structure-the-repository-by-concern.md) | Structure the repository by concern |
 
