@@ -20,6 +20,14 @@ A change also names the term it builds: which entry it makes real or extends, an
 
 Root [`CONTEXT.md`](CONTEXT.md) only points there, for tooling that looks for a glossary at the root. Do not add terms to it.
 
+## Product requirements
+
+What the product does is its PRDs, in [`product/prds/`](product/prds/), one per part of the product, numbered in order: who it serves, its flows, edge cases, acceptance criteria, and what it leaves for later. [ADR-0002](docs/adr/0002-use-living-prds-as-the-product-contract.md) says why. A PRD builds on [`product/vision.md`](product/vision.md) rather than restating it, and [`product/principles.md`](product/principles.md) filters every decision in it.
+
+Read the PRD a change belongs to before starting it. A change the PRD does not describe edits the PRD first, as its own pull request, merged before the code. A new part of the product starts a new PRD, copied from [`product/prds/_template.md`](product/prds/_template.md) rather than from another PRD.
+
+The `writing-prds` skill carries how a PRD is drafted and when it is done. It comes from the `contributing` plugin, which [`.claude/settings.json`](.claude/settings.json) declares; if it is not available, say so rather than drafting without it.
+
 ## Writing for review
 
 The `writing-pull-requests` skill carries the procedure for a pull request description. It comes from the `contributing` plugin, which [`.claude/settings.json`](.claude/settings.json) declares; if it is not available, say so rather than writing the description without it. It guards against the register failures an agent-authored description falls into: narrating the authoring session, explaining how the change evolved, and restating what the diff already shows. A failure caught in review here that it did not prevent is written down in this section.

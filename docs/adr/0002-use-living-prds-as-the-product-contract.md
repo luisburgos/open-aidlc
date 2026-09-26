@@ -48,4 +48,4 @@ Sunk if PRDs are edited after the code to describe what was built, or if they fi
 
 ## More Information
 
-How a PRD is drafted, and the template it follows, is the `writing-prds` skill of the `contributing` plugin that `.claude/settings.json` declares.
+A PRD follows [`product/prds/_template.md`](../../product/prds/_template.md), and how one is drafted is the `writing-prds` skill of the `contributing` plugin that `.claude/settings.json` declares.
