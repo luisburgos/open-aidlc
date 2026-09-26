@@ -10,6 +10,10 @@ Every change to a `candidate-standard` record says its **migration impact**, one
 
 ## Unreleased
 
+### Removed
+
+- `openspec/`, its worked example, the OpenSpec section of `AGENTS.md` and the step that installed the CLI, following ADR-0002. ADR-0000, ADR-0004 and the ADR README point at PRDs and tests instead of `openspec/specs/`. **Migration impact: clarified** for those three records.
+
 ### Changed
 
 - **ADR-0002** is now *Use living PRDs as the product contract*: one PRD per part of the product in `product/prds/`, edited before the code, instead of OpenSpec's specs and change proposals. A product specified one change at a time can satisfy every spec and still not be the one wanted. **Migration impact: reversed.** Describe what `openspec/specs/` holds as PRDs, then remove `openspec/` and the skills and commands `openspec init` generated.

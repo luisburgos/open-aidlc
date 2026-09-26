@@ -1,8 +1,8 @@
 # Domain
 
-The words this product is made of, and the one name each thing goes by. Every specification is written in this vocabulary; a change that needs a term this document lacks, or means differently, changes this document first and says so.
+The words this product is made of, and the one name each thing goes by. Every PRD is written in this vocabulary; a change that needs a term this document lacks, or means differently, changes this document first and says so.
 
-A glossary and nothing else. What each thing is, not how it behaves, how it is stored, or how it is shown. Behaviour belongs in specifications, decisions in `docs/adr/`.
+A glossary and nothing else. What each thing is, not how it behaves, how it is stored, or how it is shown. Behaviour belongs in PRDs, decisions in `docs/adr/`.
 
 ## How an entry is written
 
