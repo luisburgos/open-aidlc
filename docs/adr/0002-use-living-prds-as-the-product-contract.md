@@ -8,7 +8,7 @@ tags: [candidate-standard]
 
 ## Context and Problem Statement
 
-The development cycle ([ADR-0001](0001-adopt-an-agentic-development-lifecycle.md)) needs something between an intent and its implementation that says what the product does. Handed an intent alone, an agent fills the gaps in code, where they are most expensive to reverse. But a contract written one change at a time can be precise about every change and still add up to a product nobody wanted, because nothing describes the product as a whole.
+The lifecycle ([ADR-0001](0001-adopt-a-lifecycle-from-bet-to-learning.md)) needs, in its Specify step, something between a decided bet and its implementation that says what the product does. Handed an intent alone, an agent fills the gaps in code, where they are most expensive to reverse. But a contract written one change at a time can be precise about every change and still add up to a product nobody wanted, because nothing describes the product as a whole.
 
 What form does the contract between the product and its implementation take?
 

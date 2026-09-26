@@ -8,17 +8,18 @@ A template repository, carrying the structural decisions and the general steps t
 
 ## The lifecycle
 
-Three cycles, nested. Each turns at its own rate.
+Six steps, from the decision to build something to what using it taught.
 
-| Cycle | Turns | Steps | Ends with |
-|---|---|---|---|
-| development | per change | intent → spec → review → task → review → archive | `openspec/specs/` updated |
-| delivery | per release | integration → release → operation | something a person can run |
-| learning | when evidence exists | signals → learning → next intent | a new intent |
+| Step | Who | Produces |
+|---|---|---|
+| Frame | agent drafts, person owns | a brief: the problem, the outcome it serves, a hypothesis and a primary metric |
+| Decide | **person** | invest or not; the hypothesis and the metric are fixed |
+| Specify | agent drafts, **person approves** | the PRD changes, merged before code |
+| Build | agent writes, **person reviews** | the code the PRDs describe |
+| Ship | **person** | a build in use, and one issue for what its use shows |
+| Learn | agent drafts, person owns | the evidence read against the hypothesis |
 
-An agent drafts the specification and writes the code. A person approves the specification before anything is implemented, and approves the code before it is kept. Those two gates are the lifecycle; everything else is arrangement.
-
-Only development is specified. Delivery and learning are named so that archiving a change is not mistaken for shipping, and shipping is not mistaken for learning. The guide says why their steps stay undefined.
+An agent drafts and builds. A person decides what is worth building, approves what the product will do before it is built, reviews the code before it is kept, and says what using it taught. Those decisions are the lifecycle; everything else is arrangement.
 
 The full procedure is [`docs/guides/lifecycle.md`](docs/guides/lifecycle.md).
 
@@ -27,7 +28,7 @@ The full procedure is [`docs/guides/lifecycle.md`](docs/guides/lifecycle.md).
 | ADR | Decision |
 |---|---|
 | [0000](docs/adr/0000-use-madr-for-decision-records.md) | MADR 4.0.0 for decision records |
-| [0001](docs/adr/0001-adopt-an-agentic-development-lifecycle.md) | Adopt an agentic development lifecycle |
+| [0001](docs/adr/0001-adopt-a-lifecycle-from-bet-to-learning.md) | Adopt a lifecycle from bet to learning |
 | [0002](docs/adr/0002-use-living-prds-as-the-product-contract.md) | Use living PRDs as the product contract |
 | [0003](docs/adr/0003-write-documentation-in-markdown-and-mermaid.md) | Write documentation in Markdown and Mermaid |
 | [0004](docs/adr/0004-structure-the-repository-by-concern.md) | Structure the repository by concern |
