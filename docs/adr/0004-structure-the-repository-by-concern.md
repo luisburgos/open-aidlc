@@ -41,7 +41,7 @@ The layout:
 
 | Path | Holds | Lifetime |
 |---|---|---|
-| `product/` | vision, principles, domain glossary, and `prds/` for what the product does | durable, PRDs revised with the product |
+| `product/` | vision, principles, domain glossary, the user's journey, and `prds/` for what the product does | durable, PRDs revised with the product |
 | `docs/adr/` | decisions and what they rejected | immutable |
 | `docs/guides/` | repeatable procedures | revised with use |
 | `apps/` | one directory per application | per surface |

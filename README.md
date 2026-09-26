@@ -59,6 +59,7 @@ claude plugin install contributing@luisburgos
 | `product/domain.md` | Write your glossary. The heading explains the discipline; the entries are yours. [Matt Pocock's `domain-modeling` skill](https://github.com/mattpocock/skills/tree/main/skills/engineering/domain-modeling) does this well, with one divergence the file names. |
 | `product/principles.md` | Write your principles. Each one must reject something tempting. |
 | `product/vision.md` | What this is and who it is for. |
+| `product/journey.md` | The stages a person goes through with the product, and where the product serves each one today. |
 | `product/prds/` | Your first PRD, copied from `_template.md`, once there is a decided bet to specify. |
 | `AGENTS.md` | Fill the sections marked as needing a pointer. |
 | `LICENSE` | Your name, or your own licence. |

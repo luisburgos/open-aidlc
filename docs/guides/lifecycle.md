@@ -31,7 +31,7 @@ A brief for the bet, drafted by an agent and owned by a person. It holds:
 - **the outcome** in `product/vision.md` it serves;
 - **a hypothesis**: what doing this will change, for whom, and why;
 - **a primary metric**: what would show the hypothesis held, and by when;
-- **the stages** of the user's journey it covers, where the product describes one;
+- **the stages** of [`product/journey.md`](../../product/journey.md) it covers;
 - **what it leaves out.**
 
 Every claim in it that nothing backs is marked as an assumption, a hypothesis or a recommendation. A brief with gaps says so rather than filling them.
