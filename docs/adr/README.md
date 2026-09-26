@@ -52,7 +52,7 @@ More tags arrive when there is something to sort, not in advance.
 
 ## Two rules
 
-**Tagged records are edited, the rest are immutable.** A `candidate-standard` record is part of the method, so it is corrected in place and the edit is recorded in [`CHANGELOG.md`](../../CHANGELOG.md) with its migration impact. Any other record, once accepted, is superseded by a new ADR, never edited or deleted, and the old one's status becomes `superseded by ADR-NNNN`.
+**Tagged records are edited, the rest are immutable.** A `candidate-standard` record is part of the method, so it is corrected in place, and the pull request that edits it and the notes of the release that carries it state its migration impact: none, clarified, or reversed with what an adopter has to undo. Any other record, once accepted, is superseded by a new ADR, never edited or deleted, and the old one's status becomes `superseded by ADR-NNNN`.
 
 **Name the expiry condition.** Where a decision has a foreseeable end, say what would trigger reopening it. "Revisit later" is not a condition.
 
