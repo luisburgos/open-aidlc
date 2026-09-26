@@ -32,7 +32,7 @@ The full procedure is [`docs/guides/lifecycle.md`](docs/guides/lifecycle.md).
 | [0003](docs/adr/0003-write-documentation-in-markdown-and-mermaid.md) | Write documentation in Markdown and Mermaid |
 | [0004](docs/adr/0004-structure-the-repository-by-concern.md) | Structure the repository by concern |
 
-Every one of them is tagged `candidate-standard`, which means they are meant to travel but have not been proven by long use. Each says in its *Confirmation* section what would validate it and what would sink it. You are adopting something in trial, and the records say so rather than hiding it.
+Every one of them is tagged `candidate-standard`, which means they are meant to travel but have not been proven by long use. They are corrected in place as they are, and each release says in [`CHANGELOG.md`](CHANGELOG.md) what changed and what an adopter has to do about it. Each says in its *Confirmation* section what would validate it and what would sink it. You are adopting something in trial, and the records say so rather than hiding it.
 
 ADR-0004 is the one you may not want. A repository that will only ever hold one application pays for `apps/` and `packages/` without collecting on them. Declining it means writing the ADR that supersedes it with the layout you chose instead, which is the mechanism these records already have. Nothing else here depends on the answer.
 

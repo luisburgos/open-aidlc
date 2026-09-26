@@ -45,7 +45,7 @@ This ADR is tagged `candidate-standard`, so it must also be judged. MADR is vali
 
 Two rules are adopted alongside the template. MADR supplies a `status` field but says nothing about either.
 
-**ADRs are immutable once accepted.** A decision that stops applying is superseded by a new one, never edited or deleted; the old `status` becomes `superseded by ADR-NNNN`. The record is why a choice was made given what was known then. What the system does now lives in `openspec/specs/`.
+**A `candidate-standard` record is edited; any other is immutable once accepted.** A tagged record is part of the template, so a correction is made to it rather than stacked beside it: an adopter should read five records to learn what five say, not fifteen. Each edit is recorded in [`CHANGELOG.md`](../../CHANGELOG.md) with its migration impact. An untagged record is a decision about what is being built, and why it was made given what was known then: one that stops applying is superseded by a new one, never edited or deleted, and the old `status` becomes `superseded by ADR-NNNN`. What the system does now lives in `openspec/specs/`.
 
 **Name the expiry condition.** Where a decision has a foreseeable end, say what would trigger reopening it. "Revisit later" is not a condition.
 
