@@ -60,6 +60,6 @@ This decision is tagged `candidate-standard`. It is validated if a change can be
 
 ## More Information
 
-The mechanism of the development cycle — how a spec is written, and in what format — is a separate decision, settled in [ADR-0002](0002-use-specs-as-the-development-contract.md).
+The mechanism of the development cycle — how a spec is written, and in what format — is a separate decision, settled in [ADR-0002](0002-use-living-prds-as-the-product-contract.md).
 
 Sources: [AI-DLC phases and artefacts](https://www.ibm.com/think/topics/ai-dlc), and the argument that redesigning the lifecycle beats accelerating one phase of it.
