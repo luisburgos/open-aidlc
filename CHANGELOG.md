@@ -12,6 +12,7 @@ Every change to a `candidate-standard` record says its **migration impact**, one
 
 ### Added
 
+- `AGENTS.md`: pull requests are squash-merged, one Conventional Commit per pull request on `main`, which is what a generated changelog reads; and a pull request is atomic, with four rules for what that means. **Migration impact: none**, though a repository that allows merge commits should turn them off in its settings.
 - `AGENTS.md` sections for **claims** (fact, assumption, hypothesis, recommendation, labelled where written), **files and issues** (what outlasts the work is a file; what is in flight is an issue), and **feedback** (one issue per build, only one open, closed at the next build with each point shipped or deferred to backlog). The lifecycle guide points at them. **Migration impact: none.**
 - `product/journey.md`: the stages a person goes through with the product, each linking the PRD flows that serve it today, and the one moment that matters. A brief names the stages its bet covers. ADR-0004 lists it under `product/`. **Migration impact: clarified** for ADR-0004.
 - `product/prds/_template.md` and a *Product requirements* section in `AGENTS.md`: where PRDs live, that a change edits its PRD first, and the `writing-prds` skill that drafts one. ADR-0002 points at the template. **Migration impact: none** for the record; a repository adopting ADR-0002 copies the template.
