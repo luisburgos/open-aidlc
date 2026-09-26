@@ -34,7 +34,7 @@ A brief for the bet, drafted by an agent and owned by a person. It holds:
 - **the stages** of [`product/journey.md`](../../product/journey.md) it covers;
 - **what it leaves out.**
 
-Every claim in it that nothing backs is marked as an assumption, a hypothesis or a recommendation. A brief with gaps says so rather than filling them.
+Every claim in it that nothing backs is labelled, as `AGENTS.md` says under *Claims*. A brief with gaps says so rather than filling them.
 
 ### Decide
 
@@ -52,7 +52,7 @@ The code the PRDs describe, one reviewed pull request at a time. A pull request 
 
 ### Ship
 
-A build a person uses. Only the person releasing starts it. What its use shows goes into one issue for that build, one section per day of use; each point becomes a fix, an effort of its own, or nothing, and says which.
+A build a person uses. Only the person releasing starts it. What its use shows goes into one issue for that build, and the issue of the build before closes, as `AGENTS.md` says under *Feedback*.
 
 ### Learn
 
