@@ -45,7 +45,7 @@ This ADR is tagged `candidate-standard`, so it must also be judged. MADR is vali
 
 Two rules are adopted alongside the template. MADR supplies a `status` field but says nothing about either.
 
-**A `candidate-standard` record is edited; any other is immutable once accepted.** A tagged record is part of the template, so a correction is made to it rather than stacked beside it: an adopter should read five records to learn what five say, not fifteen. Each edit is recorded in [`CHANGELOG.md`](../../CHANGELOG.md) with its migration impact. An untagged record is a decision about what is being built, and why it was made given what was known then: one that stops applying is superseded by a new one, never edited or deleted, and the old `status` becomes `superseded by ADR-NNNN`. What the product does now lives in its PRDs.
+**A `candidate-standard` record is edited; any other is immutable once accepted.** A tagged record is part of the template, so a correction is made to it rather than stacked beside it: an adopter should read five records to learn what five say, not fifteen. Each edit states its migration impact in its pull request and in the notes of the release that carries it, so the file tree stays free for the product of whoever adopts the template. An untagged record is a decision about what is being built, and why it was made given what was known then: one that stops applying is superseded by a new one, never edited or deleted, and the old `status` becomes `superseded by ADR-NNNN`. What the product does now lives in its PRDs.
 
 **Name the expiry condition.** Where a decision has a foreseeable end, say what would trigger reopening it. "Revisit later" is not a condition.
 
