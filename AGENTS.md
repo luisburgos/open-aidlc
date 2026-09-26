@@ -28,6 +28,41 @@ Read the PRD a change belongs to before starting it. A change the PRD does not d
 
 The `writing-prds` skill carries how a PRD is drafted and when it is done. It comes from the `contributing` plugin, which [`.claude/settings.json`](.claude/settings.json) declares; if it is not available, say so rather than drafting without it.
 
+## Claims
+
+A claim in a product document, whether a brief, a PRD or the journey, is one of four kinds:
+
+- **FACT:** backed by something a reader can check: this repository, a test, or what was seen in use.
+- **ASSUMPTION:** taken as true without evidence, on purpose, to make progress.
+- **HYPOTHESIS:** a causal claim that can be tested and has not been.
+- **RECOMMENDATION:** a judgement about what whoever owns the product should decide.
+
+A claim with no label is a FACT, so every other kind is labelled where it is written, in capitals. A FACT is labelled only when its evidence is the point, and then names the evidence. A gap is not a claim: it is `TBD` with a one-line note.
+
+Never write a hypothesis as a fact, and never invent evidence.
+
+## Files and issues
+
+What must outlast the work it came from is a file in this repository. What exists only while work is in flight is an issue.
+
+- **Files:** the vision, principles, glossary and journey in `product/`; PRDs in `product/prds/`; each bet's brief and what it taught; decisions in `docs/adr/`.
+- **Issues:** feedback on a build, efforts not yet built, and the tracking of work in flight. A tracking issue lists its pull requests as a checklist in its body, not as a sub-issue each.
+
+An issue that holds something durable hands it to a file before it closes.
+
+## Feedback
+
+Feedback from using a build lives in one issue per build, labelled `feedback` and titled "Feedback on <version> (<build>)": what was seen, one section per day of use, and a checklist, "New from this feedback", of the fixes and backlog issues each point became. Only one is open at a time: the issue of the latest build shipped.
+
+A quick fix is a pull request that references the feedback issue. An effort it raises is a sub-issue of its own, and gets a PRD when it is built.
+
+When the next build ships, its feedback issue opens and the previous one closes, with every point in one of two states:
+
+- **Shipped:** checked, with the pull request that did it. A checked point is always in the build that follows.
+- **Deferred to backlog:** moved out of the checklist to a section of that name, linking its own issue. A point without one gets one before the close. A point decided against is deferred too, and its issue is closed as not planned.
+
+From then on the backlog issue owns the point. A closed feedback issue is not edited again: it records what happened with that build, not where each point stands now. Bringing a deferred point into the open feedback issue is the product owner's decision, made by adding it to that issue's checklist.
+
 ## Writing for review
 
 The `writing-pull-requests` skill carries the procedure for a pull request description. It comes from the `contributing` plugin, which [`.claude/settings.json`](.claude/settings.json) declares; if it is not available, say so rather than writing the description without it. It guards against the register failures an agent-authored description falls into: narrating the authoring session, explaining how the change evolved, and restating what the diff already shows. A failure caught in review here that it did not prevent is written down in this section.
