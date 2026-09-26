@@ -45,7 +45,7 @@ ADR-0004 is the one you may not want. A repository that will only ever hold one 
 
 **1. Install the `contributing` plugin.**
 
-`.claude/settings.json` declares it: it carries the `writing-pull-requests` and `writing-adrs` skills that `AGENTS.md` sends agents to.
+`.claude/settings.json` declares it: it carries the `writing-pull-requests`, `writing-adrs` and `writing-prds` skills that `AGENTS.md` sends agents to.
 
 ```bash
 claude plugin marketplace add luisburgos/skills
@@ -59,6 +59,7 @@ claude plugin install contributing@luisburgos
 | `product/domain.md` | Write your glossary. The heading explains the discipline; the entries are yours. [Matt Pocock's `domain-modeling` skill](https://github.com/mattpocock/skills/tree/main/skills/engineering/domain-modeling) does this well, with one divergence the file names. |
 | `product/principles.md` | Write your principles. Each one must reject something tempting. |
 | `product/vision.md` | What this is and who it is for. |
+| `product/prds/` | Your first PRD, copied from `_template.md`, once there is a decided bet to specify. |
 | `AGENTS.md` | Fill the sections marked as needing a pointer. |
 | `LICENSE` | Your name, or your own licence. |
 

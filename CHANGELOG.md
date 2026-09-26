@@ -10,6 +10,10 @@ Every change to a `candidate-standard` record says its **migration impact**, one
 
 ## Unreleased
 
+### Added
+
+- `product/prds/_template.md` and a *Product requirements* section in `AGENTS.md`: where PRDs live, that a change edits its PRD first, and the `writing-prds` skill that drafts one. ADR-0002 points at the template. **Migration impact: none** for the record; a repository adopting ADR-0002 copies the template.
+
 ### Removed
 
 - `openspec/`, its worked example, the OpenSpec section of `AGENTS.md` and the step that installed the CLI, following ADR-0002. ADR-0000, ADR-0004 and the ADR README point at PRDs and tests instead of `openspec/specs/`. **Migration impact: clarified** for those three records.
