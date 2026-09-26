@@ -38,23 +38,11 @@ ADR-0004 is the one you may not want. A repository that will only ever hold one 
 
 ## Folder structure
 
-`product/`, `openspec/`, `docs/` and `.claude/` are here. `apps/`, `packages/` and `tools/` are not, because a directory is created when it has content. What each one holds, and why they are arranged this way, is [ADR-0004](docs/adr/0004-structure-the-repository-by-concern.md).
+`product/`, `docs/` and `.claude/` are here. `apps/`, `packages/` and `tools/` are not, because a directory is created when it has content. What each one holds, and why they are arranged this way, is [ADR-0004](docs/adr/0004-structure-the-repository-by-concern.md).
 
 ## Getting started
 
-**1. Install the OpenSpec CLI and initialise it.**
-
-The lifecycle assumes it. Without it, the `spec` and `archive` steps describe something you cannot execute.
-
-```bash
-openspec init
-```
-
-This generates `openspec/`, the skills under `.claude/skills/openspec-*`, and the commands under `.claude/commands/opsx/`. Do not copy those from anywhere; let the CLI create them so they match the version you installed.
-
-To see what the CLI eventually produces, [`openspec/changes/archive/_example-mark-an-item-done/`](openspec/changes/archive/_example-mark-an-item-done/) is a worked example of the four artifacts an archived change carries, written by hand for a toy product. Read it, then delete the directory.
-
-**2. Install the `contributing` plugin.**
+**1. Install the `contributing` plugin.**
 
 `.claude/settings.json` declares it: it carries the `writing-pull-requests` and `writing-adrs` skills that `AGENTS.md` sends agents to.
 
@@ -63,18 +51,17 @@ claude plugin marketplace add luisburgos/skills
 claude plugin install contributing@luisburgos
 ```
 
-**3. Fill in what is yours.**
+**2. Fill in what is yours.**
 
 | File | What to do |
 |---|---|
 | `product/domain.md` | Write your glossary. The heading explains the discipline; the entries are yours. [Matt Pocock's `domain-modeling` skill](https://github.com/mattpocock/skills/tree/main/skills/engineering/domain-modeling) does this well, with one divergence the file names. |
 | `product/principles.md` | Write your principles. Each one must reject something tempting. |
 | `product/vision.md` | What this is and who it is for. |
-| `openspec/config.yaml` | Replace the `context` block with pointers to your own files. |
 | `AGENTS.md` | Fill the sections marked as needing a pointer. |
 | `LICENSE` | Your name, or your own licence. |
 
-**4. Record your first decisions.**
+**3. Record your first decisions.**
 
 `docs/adr/` already holds the records covering the method itself. Yours take the next number after them. Copy [`_template.md`](docs/adr/_template.md) rather than reconstructing the structure from another record.
 

@@ -1,6 +1,6 @@
 # Architecture Decision Records
 
-Decisions that govern this repository and outlive the conversations that produced them. An ADR records **why a solution was chosen and what was rejected**, not what the system currently does. For what the system does, see `openspec/specs/`.
+Decisions that govern this repository and outlive the conversations that produced them. An ADR records **why a solution was chosen and what was rejected**, not what the system currently does. For what the system does, see the PRDs in `product/prds/` and the tests.
 
 Format is [MADR 4.0.0](https://adr.github.io/madr/), minimal variant.
 
@@ -61,9 +61,10 @@ More tags arrive when there is something to sort, not in advance.
 | It is | Then it belongs in |
 |---|---|
 | a rejected alternative and the reasoning | here |
-| behaviour a test can verify | `openspec/specs/` |
+| what the product does | a PRD in `product/prds/` |
+| behaviour a test can verify | a test |
 | a repeatable procedure | `docs/guides/` |
 | what the product is and who it is for | `product/` |
 | an operating rule for agents | `AGENTS.md` |
 
-The test: **did you reject an alternative?** If yes, it is an ADR. **Can a test verify it?** If yes, it is a spec.
+The test: **did you reject an alternative?** If yes, it is an ADR. **Can a test verify it?** If yes, it belongs in a test.

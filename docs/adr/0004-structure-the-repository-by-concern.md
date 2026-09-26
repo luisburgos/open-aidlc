@@ -41,8 +41,7 @@ The layout:
 
 | Path | Holds | Lifetime |
 |---|---|---|
-| `product/` | vision, principles, domain glossary | durable |
-| `openspec/` | `specs/` current behaviour, `changes/` proposals | accumulating |
+| `product/` | vision, principles, domain glossary, and `prds/` for what the product does | durable, PRDs revised with the product |
 | `docs/adr/` | decisions and what they rejected | immutable |
 | `docs/guides/` | repeatable procedures | revised with use |
 | `apps/` | one directory per application | per surface |
@@ -60,7 +59,7 @@ A directory is created when it has content. `apps/`, `packages/` and `tools/` ar
 
 ### Confirmation
 
-Validated when a second surface is added and nothing under `product/`, `openspec/` or `docs/` has to move.
+Validated when a second surface is added and nothing under `product/` or `docs/` has to move.
 
 Sunk if artifacts keep landing somewhere other than where this says, which would mean the categories match the writing less well than the layout claims.
 
