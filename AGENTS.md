@@ -45,7 +45,7 @@ Never write a hypothesis as a fact, and never invent evidence.
 
 What must outlast the work it came from is a file in this repository. What exists only while work is in flight is an issue.
 
-- **Files:** the vision, principles, glossary and journey in `product/`; PRDs in `product/prds/`; each bet's brief and what it taught; decisions in `docs/adr/`.
+- **Files:** the vision, principles, glossary and journey in `product/`; PRDs in `product/prds/`; each initiative's brief and what it taught in `initiatives/<name>/`, copied from [`initiatives/_template/`](initiatives/_template/); decisions in `docs/adr/`.
 - **Issues:** feedback on a build, efforts not yet built, and the tracking of work in flight. A tracking issue lists its pull requests as a checklist in its body, not as a sub-issue each.
 
 An issue that holds something durable hands it to a file before it closes.

@@ -44,6 +44,7 @@ The layout:
 | `product/` | vision, principles, domain glossary, the user's journey, and `prds/` for what the product does | durable, PRDs revised with the product |
 | `docs/adr/` | decisions and what they rejected | immutable |
 | `docs/guides/` | repeatable procedures | revised with use |
+| `initiatives/` | one directory per initiative: its brief and what it taught, from `_template/` | closed at Learn, kept |
 | `apps/` | one directory per application | per surface |
 | `packages/` | code shared between applications | appears with the second application |
 | `tools/` | scripts | as needed |

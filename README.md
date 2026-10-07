@@ -39,7 +39,7 @@ ADR-0004 is the one you may not want. A repository that will only ever hold one 
 
 ## Folder structure
 
-`product/`, `docs/` and `.claude/` are here. `apps/`, `packages/` and `tools/` are not, because a directory is created when it has content. What each one holds, and why they are arranged this way, is [ADR-0004](docs/adr/0004-structure-the-repository-by-concern.md).
+`product/`, `docs/`, `initiatives/` and `.claude/` are here. `apps/`, `packages/` and `tools/` are not, because a directory is created when it has content. What each one holds, and why they are arranged this way, is [ADR-0004](docs/adr/0004-structure-the-repository-by-concern.md).
 
 ## Getting started
 
@@ -60,6 +60,7 @@ claude plugin install contributing@luisburgos
 | `product/principles.md` | Write your principles. Each one must reject something tempting. |
 | `product/vision.md` | What this is and who it is for. |
 | `product/journey.md` | The stages a person goes through with the product, and where the product serves each one today. |
+| `initiatives/` | Your first initiative, copied from `_template/`, once there is a problem worth a bet. |
 | `product/prds/` | Your first PRD, copied from `_template.md`, once there is a decided bet to specify. |
 | `AGENTS.md` | Fill the sections marked as needing a pointer. |
 | `LICENSE` | Your name, or your own licence. |
