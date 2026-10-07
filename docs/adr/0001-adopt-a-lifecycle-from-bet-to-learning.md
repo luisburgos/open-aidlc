@@ -57,4 +57,4 @@ Sunk if work reaches Build without a decision, or if Learn is skipped once a bui
 
 ## More Information
 
-The contract used in Specify is [ADR-0002](0002-use-living-prds-as-the-product-contract.md). The shape of a brief is fixed in the guide by its contents; a template for it waits until one has been carried through Learn.
+The contract used in Specify is [ADR-0002](0002-use-living-prds-as-the-product-contract.md). A brief and its learnings are written from `initiatives/_template/`.
