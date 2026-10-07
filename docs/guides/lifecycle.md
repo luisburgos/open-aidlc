@@ -5,11 +5,23 @@ How work runs here, from the decision to build something to what using it taught
 ```mermaid
 flowchart LR
   F[Frame] --> D{{Decide}} --> S[Specify] --> B[Build] --> SH[Ship] --> L[Learn]
-  L -. the next bet .-> F
+  L -. the next initiative .-> F
   X[a fix back to what the PRD says] --> B
 ```
 
-The unit is a **bet**: a piece of work expected to change something for the people who use the product, written down before it is built so that its use can say whether it did.
+## Terms
+
+Two words carry this lifecycle, and they are not interchangeable: one names a document, the other what that document stakes.
+
+**Initiative**:
+The unit of work: a document that frames a problem, the outcome it serves and one bet, and that collects what the work taught once it is used. It moves through every step below and is closed at Learn.
+_Avoid_: bet, brief, epic, project, feature
+
+**Bet**:
+The hypothesis and primary metric of one initiative, chosen by a person at Decide and fixed from then on. It is what use can prove wrong.
+_Avoid_: initiative, brief, goal, plan
+
+An initiative carries exactly one bet. A second hypothesis is a second initiative, even when it grows out of the first. The brief is the part of an initiative written at Frame, not a third thing.
 
 ## Rules
 
@@ -25,7 +37,7 @@ No constraint here is optional. Breaking one does not slow the lifecycle down, i
 
 ### Frame
 
-A brief for the bet, drafted by an agent and owned by a person. It holds:
+The initiative's brief, drafted by an agent and owned by a person. It holds:
 
 - **the problem**, as observed, with where it was seen;
 - **the outcome** in `product/vision.md` it serves;
@@ -42,7 +54,7 @@ A person decides whether to invest. Deciding fixes the hypothesis and the metric
 
 ### Specify
 
-The PRDs the bet creates or changes, drafted by an agent and approved by a person, each change its own pull request, merged before any code. [ADR-0002](../adr/0002-use-living-prds-as-the-product-contract.md) says why the PRD is the contract. The review is the moment the behaviour can still change cheaply: it fails while any decision is left for the agent to make alone.
+The PRDs the initiative creates or changes, drafted by an agent and approved by a person, each change its own pull request, merged before any code. [ADR-0002](../adr/0002-use-living-prds-as-the-product-contract.md) says why the PRD is the contract. The review is the moment the behaviour can still change cheaply: it fails while any decision is left for the agent to make alone.
 
 ### Build
 
@@ -56,7 +68,7 @@ A build a person uses. Only the person releasing starts it. What its use shows g
 
 ### Learn
 
-The evidence from use is read against the hypothesis, and the result is written down: whether it held, what the evidence was, and what it changes about the next bet. What the way of working itself taught, as opposed to the product, is written down too. The bet is then closed.
+The evidence from use is read against the hypothesis, and the result is written down: whether it held, what the evidence was, and what it changes about the next bet. What the way of working itself taught, as opposed to the product, is written down too. The initiative is then closed.
 
 ## Where the PRD is the authority, and where the code is
 

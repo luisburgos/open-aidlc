@@ -13,8 +13,8 @@
   The sections follow the classic feature PRD spine:
   https://www.productmap.io/blog/ai-prd-template#the-classic-feature-prd-spine
   except Success Metrics. A PRD describes what the product does, and changes as the
-  product does; the problem, the bet and how it is measured belong to whatever frames
-  the work, such as an initiative or a brief. The PRD names none.
+  product does; the problem, the bet and how it is measured belong to the initiative
+  that frames the work. The PRD names none.
 
   Write in the terms of the product's glossary, where it has one. Who the product is
   for and where it is going belongs to its vision; do not restate it. Its principles,

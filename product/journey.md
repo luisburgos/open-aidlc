@@ -1,6 +1,6 @@
 # Journey
 
-The stages a person goes through with the product, named by what they do rather than by screen. Screens change; stages hold. A brief names the stages its bet covers, and leaves the rest alone.
+The stages a person goes through with the product, named by what they do rather than by screen. Screens change; stages hold. An initiative names the stages it covers, and leaves the rest alone.
 
 ## How a stage is written
 
