@@ -39,7 +39,7 @@ ADR-0004 is the one you may not want. A repository that will only ever hold one 
 
 ## Folder structure
 
-`product/`, `docs/`, `initiatives/` and `.claude/` are here. `apps/`, `packages/`, `system/` and `tools/` are not, because a directory is created when it has content. What each one holds, and why they are arranged this way, is [ADR-0004](docs/adr/0004-structure-the-repository-by-concern.md).
+`product/`, `docs/`, `initiatives/` and `.claude/` are here. `apps/`, `packages/` and `tools/` are not, because a directory is created when it has content. What each one holds, and why they are arranged this way, is [ADR-0004](docs/adr/0004-structure-the-repository-by-concern.md).
 
 ## Getting started
 

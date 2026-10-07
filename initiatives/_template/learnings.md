@@ -5,8 +5,8 @@
   the hypothesis in brief.md, which does not change. The product owner approves each
   learning before it shapes what comes next. Delete each comment as it is filled in.
 
-  A learning about how the work is done, rather than about the product, goes to
-  ../../system/learnings.md instead, which is created with its first entry.
+  A learning about how the work is done, rather than about the product, does not
+  go here.
 -->
 
 ## L-001: [What was learned, in a few words]
