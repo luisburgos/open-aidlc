@@ -12,7 +12,7 @@ Six steps, from the decision to build something to what using it taught.
 
 | Step | Who | Produces |
 |---|---|---|
-| Frame | agent drafts, person owns | a brief: the problem, the outcome it serves, a hypothesis and a primary metric |
+| Frame | agent drafts, person owns | an initiative's brief: the problem, the outcome it serves, a hypothesis and a primary metric |
 | Decide | **person** | invest or not; the hypothesis and the metric are fixed |
 | Specify | agent drafts, **person approves** | the PRD changes, merged before code |
 | Build | agent writes, **person reviews** | the code the PRDs describe |

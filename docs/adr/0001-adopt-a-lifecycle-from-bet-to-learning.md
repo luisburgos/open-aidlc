@@ -40,7 +40,7 @@ The six steps:
 
 | Step | Who | Produces |
 |---|---|---|
-| Frame | agent drafts, person owns | a brief: the problem, the outcome it serves, a hypothesis and a primary metric |
+| Frame | agent drafts, person owns | an initiative's brief: the problem, the outcome it serves, a hypothesis and a primary metric |
 | Decide | **person** | invest or not; the hypothesis and the metric are fixed |
 | Specify | agent drafts, **person approves** | the PRD changes, each its own pull request, merged before code |
 | Build | agent writes, **person reviews** | the code the PRDs describe |
@@ -51,7 +51,7 @@ How each step runs is [docs/guides/lifecycle.md](../guides/lifecycle.md). A fix 
 
 ### Confirmation
 
-Validated when a bet is carried from Frame to Learn and its learning says whether the hypothesis held, without the hypothesis or the metric having moved after the decision.
+Validated when an initiative is carried from Frame to Learn and its learning says whether the hypothesis held, without the hypothesis or the metric having moved after the decision.
 
 Sunk if work reaches Build without a decision, or if Learn is skipped once a build ships, which would mean the lifecycle describes an intention rather than a practice.
 
